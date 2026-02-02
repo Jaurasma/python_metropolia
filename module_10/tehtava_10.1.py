@@ -5,6 +5,7 @@
 # Viimeksi mainitut metodit ajavat hissiä yhden kerroksen ylös- tai alaspäin ja ilmoittavat, missä kerroksessa hissi sen jälkeen on.
 # Testaa luokkaa siten, että teet pääohjelmassa hissin ja käsket sen siirtymään haluamaasi kerrokseen ja sen jälkeen takaisin alimpaan kerrokseen.
 
+
 import time
 import os
 
@@ -14,9 +15,9 @@ def clear():
 
 class Hissi:
     def __init__(self, alin, ylin):
-        self.alin = alin
-        self.ylin = ylin
-        self.kerros = alin
+        self.alin = alin if alin <= ylin else ylin
+        self.ylin = ylin if alin <= ylin else alin
+        self.kerros = self.alin
 
     def nayta(self):
         clear()
@@ -38,15 +39,21 @@ class Hissi:
             self.nayta()
 
     def siirry_kerrokseen(self, tavoite):
+        if tavoite < self.alin:
+            tavoite = self.alin
+        elif tavoite > self.ylin:
+            tavoite = self.ylin
         while self.kerros < tavoite:
             self.kerros_ylös()
         while self.kerros > tavoite:
             self.kerros_alas()
 
 def main():
-    hissi = Hissi(1, 10)
+    lowest_floor = int(input("Anna alin kerros: "))
+    highest_floor = int(input("Anna ylin kerros: "))
+    hissi = Hissi(lowest_floor, highest_floor)
     hissi.nayta()
-    kohde = int(input("Mihin kerrokseen haluat mennä (1-10)? "))
+    kohde = int(input("Mihin kerrokseen haluat mennä ({}, {})? ".format(lowest_floor, highest_floor)))
     hissi.siirry_kerrokseen(kohde)
     input("Paina Enter palataksesi alimpaan kerrokseen...")
     hissi.siirry_kerrokseen(hissi.alin)
