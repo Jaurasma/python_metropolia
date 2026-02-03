@@ -1,6 +1,6 @@
 # Kirjoita ohjelma, joka hakee ja tulostaa satunnaisen Chuck Norris -vitsin käyttäjälle. Käytä seuravalla sivulla esiteltävää rajapintaa: https://api.chucknorris.io/. Käyttäjälle on näytettävä pelkkä vitsin teksti.
 
-import pip._vendor.requests as requests
+import requests as requests
 
 def hae_chuck_norris_vitsi():
     url = "https://api.chucknorris.io/jokes/random"
