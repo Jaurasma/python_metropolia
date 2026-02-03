@@ -1,4 +1,5 @@
 # Kirjoita while-toistorakennetta käyttävä ohjelma, joka tulostaa kolmella jaolliset luvut väliltä 1..1000.
+
 def print_multiples_of_three():
     number = 3
     count = 0

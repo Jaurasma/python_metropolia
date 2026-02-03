@@ -3,9 +3,9 @@
 import math
 
 def pizza_unit_price(diameter_cm, price_eur):
-    radius_m = (diameter_cm / 2) / 100  # Muutetaan säde metreiksi
-    area_m2 = math.pi * (radius_m ** 2)  # Lasketaan pinta-ala neliömetreinä
-    unit_price = price_eur / area_m2  # Lasketaan yksikköhinta euroina per neliömetri
+    radius_m = (diameter_cm / 2) / 100 
+    area_m2 = math.pi * (radius_m ** 2)
+    unit_price = price_eur / area_m2
     return unit_price
 
 def main():
