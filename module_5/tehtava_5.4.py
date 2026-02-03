@@ -11,4 +11,8 @@ def city_names():
     for city in cities:
         print(city)
 
-city_names()
+def main():
+    city_names()
+
+if __name__ == "__main__":
+    main()

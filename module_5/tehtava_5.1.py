@@ -15,4 +15,8 @@ def roll_dice():
 
     print(f"Arpakuutioiden silmälukujen summa on: {total_sum}")
 
-roll_dice()
+def main():
+    roll_dice()
+
+if __name__ == "__main__":
+    main()

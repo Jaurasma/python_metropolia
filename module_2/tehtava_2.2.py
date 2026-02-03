@@ -1,7 +1,12 @@
 # Kirjoita ohjelma, joka kysyy ympyrän säteen ja tulostaa sen pinta-alan.
+import math
 def radius_area():
     radius = float(input("Anna ympyrän säde: "))
-    area = 3.14159 * radius ** 2
-    print(f"Ympyrän pinta-ala on: {area}")
+    area = math.pi * radius ** 2
+    print(f"Ympyrän pinta-ala on: {area:.2f}")
 
-radius_area()
+def main():
+    radius_area()
+
+if __name__ == "__main__":
+    main()

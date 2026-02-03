@@ -16,4 +16,8 @@ def login_system():
             print(f"Väärä käyttäjätunnus tai salasana. Yritä uudelleen. ({max_attempts - attempts} yritystä jäljellä)")
     print("Pääsy evätty.")
 
-login_system()
+def main():
+    login_system()
+
+if __name__ == "__main__":
+    main()

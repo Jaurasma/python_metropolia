@@ -10,4 +10,8 @@ def print_multiples_of_three():
     if count % 10 != 0:
         print()
 
-print_multiples_of_three()
+def main():
+    print_multiples_of_three()
+
+if __name__ == "__main__":
+    main()

@@ -7,5 +7,8 @@ def check_fish_length():
         print(f"Kuha on alamittainen. Laske kuha takaisin järveen. Puuttuu {37 - length} cm.")
     else:
         print("Hieno saalis!")
+def main():
+    check_fish_length()
 
-check_fish_length()
+if __name__ == "__main__":
+    main()

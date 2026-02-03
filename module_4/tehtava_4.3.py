@@ -17,4 +17,8 @@ def find_min_max():
     else:
         print("Ei syötettyjä lukuja.")
 
-find_min_max()
+def main():
+    find_min_max()
+
+if __name__ == "__main__":
+    main()

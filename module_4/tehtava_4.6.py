@@ -29,4 +29,8 @@ def calculate_pi():
     pi_estimate = 4 * inside_circle / num_points
     print(f"Piin likiarvo on: {pi_estimate}")
 
-calculate_pi()
+def main():
+    calculate_pi()
+
+if __name__ == "__main__":
+    main()

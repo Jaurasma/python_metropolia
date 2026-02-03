@@ -9,5 +9,8 @@ def generate_codes():
     four_digit_code = ''.join(str(random.randint(1, 6)) for _ in range(4))
     print(f"Kolmenumeroinen koodi: {three_digit_code}")
     print(f"Nelinumeroinen koodi: {four_digit_code}")
+def main():
+    generate_codes()
 
-generate_codes()
+if __name__ == "__main__":
+    main()

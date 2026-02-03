@@ -22,5 +22,8 @@ def describe_cabin_class():
         print("Virheellinen hyttiluokka. yritä uudelleen.\nKirjoita EXIT lopettaaksesi.")
         describe_cabin_class()
 
-    
-describe_cabin_class()
+def main():  
+    describe_cabin_class()
+
+if __name__ == "__main__":
+    main()

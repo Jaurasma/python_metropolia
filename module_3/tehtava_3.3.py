@@ -35,4 +35,8 @@ def check_hemoglobin():
     else:
         print("Virheellinen syöte. Yritä uudelleen.")
 
-check_hemoglobin()
+def main():
+    check_hemoglobin()
+
+if __name__ == "__main__":
+    main()

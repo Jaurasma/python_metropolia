@@ -12,4 +12,8 @@ def convert_mass():
     grams = total_grams % 1000
     print(f"Massa nykymittojen mukaan: {kilograms} kilogrammaa ja {grams:.2f} grammaa.")
 
-convert_mass()
+def main():
+    convert_mass()
+
+if __name__ == "__main__":
+    main()

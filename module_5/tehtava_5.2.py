@@ -20,4 +20,8 @@ def five_largest_numbers():
     for num in largest_five:
         print(num)
 
-five_largest_numbers()
+def main():
+    five_largest_numbers()
+
+if __name__ == "__main__":
+    main()

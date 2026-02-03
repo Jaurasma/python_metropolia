@@ -4,4 +4,8 @@ def greet_user():
     if name:
         print(f"Terve, {name}!")
 
-greet_user()
+def main():
+    greet_user()
+
+if __name__ == "__main__":
+    main()

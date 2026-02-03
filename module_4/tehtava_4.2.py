@@ -8,5 +8,8 @@ def inches_to_cm():
             break
         cm = inches * 2.54
         print(f"{inches} tuumaa on {cm:.2f} senttimetriä.")
+def main():
+    inches_to_cm()
 
-inches_to_cm()
+if __name__ == "__main__":
+    main()

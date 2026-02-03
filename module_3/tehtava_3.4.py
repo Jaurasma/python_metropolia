@@ -6,5 +6,8 @@ def is_leap_year():
         print(f"{year} on karkausvuosi.")
     else:
         print(f"{year} ei ole karkausvuosi.")
+def main():
+    is_leap_year()  
 
-is_leap_year()
+if __name__ == "__main__":
+    main()

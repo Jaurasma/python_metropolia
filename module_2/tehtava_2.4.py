@@ -12,4 +12,9 @@ def calculate_numbers():
     print(f"Lukujen tulo on: {tulo}")
     print(f"Lukujen keskiarvo on: {keskiarvo}")
 
-calculate_numbers()
+def main():
+    calculate_numbers()
+
+if __name__ == "__main__":
+    main()
+    

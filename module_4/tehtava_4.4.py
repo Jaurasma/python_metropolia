@@ -21,4 +21,8 @@ def guess_the_number():
         except ValueError:
             print("Virheellinen syöte. Anna kokonaisluku.")
 
-guess_the_number()
+def main():
+    guess_the_number()
+
+if __name__ == "__main__":
+    main()

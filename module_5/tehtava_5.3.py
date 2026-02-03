@@ -16,4 +16,8 @@ def is_prime():
 
     print(f"Luku {number} on alkuluku.")
 
-is_prime()
+def main():
+    is_prime()
+
+if __name__ == "__main__":
+    main()
