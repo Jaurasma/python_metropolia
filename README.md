@@ -117,6 +117,7 @@ Tehtävät on jaettu **moduuleihin**, joista jokaisella on oma kansionsa:
 
 ## 🇬🇧 In English
 [Suomeksi 🇫🇮](#-suomeksi)
+
 A collection of Python exercises for Metropolia University of Applied Sciences (**Python Basics** course).
 
 This repository contains the course assignments organized by **modules** and **exercise files**.  
