@@ -1,5 +1,6 @@
 #Tutustu avoimeen OpenWeather-säärajapintaan: https://openweathermap.org/api. Kirjoita ohjelma, joka kysyy käyttäjältä paikkakunnan nimen ja tulostaa sitä vastaavan säätilan tekstin sekä lämpötilan Celsius-asteina. Perehdy rajapinnan dokumentaatioon riittävästi. Palveluun rekisteröityminen on tarpeen, jotta saat rajapintapyynnöissä tarvittavan API-avaimen (API key). Selvitä myös, miten saat Kelvin-asteet muunnettua Celsius-asteiksi.
 
+# Save your API key in a .env file as OPEN_WEATHER_API_KEY=your_api_key / Tallenna API-avain .env-tiedostoon muodossa OPEN_WEATHER_API_KEY=your_api_key
 import os
 import requests
 from dotenv import load_dotenv 
